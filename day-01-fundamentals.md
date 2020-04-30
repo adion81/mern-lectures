@@ -2,4 +2,4 @@
 
 
 
-<img src="../assets/js.png" alt="JavaScript" width="200px" />
+<img src="https://github.com/adion81/-mern-lectures/blob/master/assets/js.png" alt="JavaScript" width="200px" />
