@@ -52,6 +52,7 @@ For the most part, we will be using dotnotation.
 
 ### Scoping 
 
-<img src="https://miro.medium.com/max/640/1*Xc7vCmdjT3ImRnW1knnCbw.png" alt="scoping"width="400px">
+<img src="https://miro.medium.com/max/640/1*Xc7vCmdjT3ImRnW1knnCbw.png" alt="scoping" width="200px">
+
 
 
