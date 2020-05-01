@@ -60,9 +60,9 @@ We can also use `let` and `const`.<br>
 There are three different scopes:
 
 <ol>
-    <li>Global - we use `var`</li>
-    <li>Function - we also use `var`</li>
-    <li>Block - we use `let` and `const`</li>
+    <li>Global - we use <em style="color:blue;">var</em></li>
+    <li>Function - we also use <em style="color:blue;">var</em></li>
+    <li>Block - we use <em style="color:blue;">`let`</em> and <em style="color:blue;">const</em></li>
 </ol>
 
 
