@@ -52,7 +52,18 @@ For the most part, we will be using dotnotation.
 
 ### Scoping 
 
-<img src="https://miro.medium.com/max/640/1*Xc7vCmdjT3ImRnW1knnCbw.png" alt="scoping" width="200px">
+<img src="https://miro.medium.com/max/640/1*Xc7vCmdjT3ImRnW1knnCbw.png" alt="scoping" width="400px">
+
+`var` isn't the only keyword we can use to define variables.<br>
+We can also use `let` and `const`.<br>
+
+There are three different scopes:
+
+<ol>
+    <li>Global - we use `var`</li>
+    <li>Function - we also use `var`</li>
+    <li>Block - we use `let` and `const`</li>
+</ol>
 
 
 
