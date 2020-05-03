@@ -66,4 +66,20 @@ There are three different scopes:
 </ol>
 
 
+#### index.js
+```js
+ var num = "banana";
+
+ function eatBanana(){
+     var num = 19;
+     for(let i = 0; i < num; i++){
+         console.log(i);
+     }
+     //If we print out i here, we will get a reference error.
+     console.log(i);
+ }
+ eatBanana();
+
+```
+
 
