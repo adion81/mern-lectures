@@ -68,18 +68,30 @@ There are three different scopes:
 
 #### index.js
 ```js
- var num = "banana";
+ var num = "banana";//This var num is accessible anywhere with in the index file.
 
  function eatBanana(){
-     var num = 19;
+     var num = 19; // this var num is only accessible with in the function eatBanana
      for(let i = 0; i < num; i++){
-         console.log(i);
+         // We can print i + num here and get it's value
+         console.log(i + num);
      }
      //If we print out i here, we will get a reference error.
      console.log(i);
+     if(num == 19)
+     {
+         let sum = num + num;//sum is only available within the if statement.
+     }
  }
  eatBanana();
 
 ```
+
+But what about the `const`key word?
+
+The difference between  `let` and `const` is that const won't be reassigned and let maybe reassigned.
+
+### Hoisting
+
 
 
