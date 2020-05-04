@@ -170,6 +170,68 @@ var { ship : spaceCraft } = spaceCrab;
 
 ```
 
+### Rest/Spread
+
+There is a new operator is town ...<br>
+<br>
+Actually that's it!!!  `...`<br>
+
+It called the rest/spread operator, and it allows us to get the rest of a data structure or spread content of an existing one.<br>
+
+```js
+var instructors = ["Will","Adrien","Anne","Phil"];
+
+const [first,second,...others] = instructors;
+
+// This will print out an array with ["Anne","Phil"]
+console.log(others);
+
+var spaceCrab = {
+    name : "Obi WanCrabnobi",
+    weapon: "Claw Light Saber",
+    isWanted: false,
+    spaceCraft : "Alluminum Falcon"
+}
+
+// This will assign the name to obi, and make a new object with the rest of spaceCrab attributes to a variable called info.
+const { obi: name , ...info } = spaceCrab;
+
+```
+
+### Arrow Functions
+
+Arrow functions are a simplified way we can write an anonymous function.<br>
+
+```js
+
+function add(num1,num2){
+    var sum = num1 + num2;
+    return sum
+}
+
+// We can rewrite the function above in a one line wonder arrow function!
+
+var sum = (num1,num2) => num1 + num2;
+
+var spaceCrab = {
+    name : "Obi WanCrabnobi",
+    weapon: "Claw Light Saber",
+    isWanted: false,
+    spaceCraft : "Alluminum Falcon"
+}
+
+// We can also create an arrow function to print out the info of spaceCrab.
+
+const printInfo = (spaceCrab) => {
+    console.log("Name: " + spaceCrab.name);
+    console.log("Weapon: " + spaceCrab.weapon);
+    console.log("Wanted ?: " + spaceCrab.isWanted);
+    console.log("Ship: " + spaceCrab.spaceCraft);
+}
+
+// And if we wanted to simplify it to one line . . . 
+const printInfo = (spaceCrab) => console.log(`Name: ${spaceCrab.name}\nWeapon: ${spaceCrab.weapon}\nWanted ?: ${spaceCrab.isWanted}\nShip: ${spaceCrab.spaceCraft}`);
+```
 
 
 
