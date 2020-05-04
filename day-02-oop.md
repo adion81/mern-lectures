@@ -33,6 +33,9 @@ function Sandwich(bread, protein, isToasted, ...toppings) {
   this.protein = protein;
   this.isToasted = isToasted;
   this.toppings = toppings;
+  this.someMethod = function() {
+    // TODO: make this method do something
+  }
 }
 
 const s2 = new Sanwich("sourdough", "bacon", true, "avacado", "lettuce", "tomato", "basil pesto aioli");
@@ -40,7 +43,7 @@ const s2 = new Sanwich("sourdough", "bacon", true, "avacado", "lettuce", "tomato
 
 ### 2.5 prototype methods (like .5 of a way)
 
-If we want to add a display method to the `Sandwich` function we can add it into the above function or we can make is a prototype method.
+If we want to add a display method to the `Sandwich` function above we could declare it inside the function or we can add it on after the fact using a `prototype` method.
 
 ```javascript
 Sandwich.prototype.display = function() {
@@ -82,7 +85,7 @@ class Sandwich {
 
 What if we wanted to make a Panini... panini's are sandwiches that will always have `isToasted=true`.
 
-```jsavascript
+```javascript
 class Panini extends Sandwich {
   constructor(bread, protein, ...toppings) {
     super(bread, protein, true, ...toppings);
