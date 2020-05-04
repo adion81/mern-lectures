@@ -6,7 +6,7 @@
 
 ### 1. declaring a variable with { }
 
-```
+```javascript
 const s1 = {
   bread: "sourdough",
   protein: "bacon",
@@ -17,7 +17,7 @@ const s1 = {
 
 ### 2. using function() {}
 
-```
+```javascript
 function Sandwich(bread, protein, isToasted, ...toppings) {
   this.bread = bread;
   this.protein = protein;
