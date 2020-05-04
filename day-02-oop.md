@@ -17,6 +17,7 @@ const s1 = {
 
 ### 2. using function() {}
 
+```
 function Sandwich(bread, protein, isToasted, ...toppings) {
   this.bread = bread;
   this.protein = protein;
@@ -25,6 +26,7 @@ function Sandwich(bread, protein, isToasted, ...toppings) {
 }
 
 const s2 = new Sanwich("sourdough", "bacon", true, "avacado", "lettuce", "tomato", "basil pesto aioli");
+```
 
 ### 2.5 prototype
 
