@@ -233,7 +233,12 @@ const printInfo = (spaceCrab) => {
 const printInfo = (spaceCrab) => console.log(`Name: ${spaceCrab.name}\nWeapon: ${spaceCrab.weapon}\nWanted ?: ${spaceCrab.isWanted}\nShip: ${spaceCrab.spaceCraft}`);
 ```
 
+### Ternary Operator
 
+Well it loos like we are starting to become one line wonders in JS!<br>
+<br>
+What if there was a way that we could write a simple if/else statement in one line?<br>
+<h1>WONDER NO MORE!!!</h1>
 
 
 
