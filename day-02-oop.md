@@ -80,7 +80,7 @@ class Sandwich {
 
 ## Inheritance
 
-What if we wanted to make a Panini... panini's are sandwiches where we will always have `isToasted=true`.
+What if we wanted to make a Panini... panini's are sandwiches that will always have `isToasted=true`.
 
 ```jsavascript
 class Panini extends Sandwich {
