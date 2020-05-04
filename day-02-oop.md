@@ -4,7 +4,7 @@
 
 ## THE TOP 3.5 WAYS TO MAKE AN OBJECT IN JS!
 
-### 1. declaring a variable with { }
+### 1. just using `{ }`
 
 ```javascript
 const s1 = {
@@ -25,7 +25,7 @@ const s1 = {
 };
 ```
 
-### 2. using function() {}
+### 2. using `function() {}`
 
 ```javascript
 function Sandwich(bread, protein, isToasted, ...toppings) {
@@ -38,7 +38,7 @@ function Sandwich(bread, protein, isToasted, ...toppings) {
 const s2 = new Sanwich("sourdough", "bacon", true, "avacado", "lettuce", "tomato", "basil pesto aioli");
 ```
 
-### 2.5 prototype
+### 2.5 prototype methods (like .5 of a way)
 
 If we want to add a display method to the `Sandwich` function we can add it into the above function or we can make is a prototype method.
 
@@ -55,7 +55,7 @@ Sandwich.prototype.display = function() {
 }
 ```
 
-### 3.5 class
+### 3.5 using `class`
 
 ```javascript
 class Sandwich {
