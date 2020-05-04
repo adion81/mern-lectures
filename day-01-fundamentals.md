@@ -240,5 +240,17 @@ Well it loos like we are starting to become one line wonders in JS!<br>
 What if there was a way that we could write a simple if/else statement in one line?<br>
 <h1>WONDER NO MORE!!!</h1>
 
+We can do this with a ternary operator . . .
+
+`{is this condition true} ? {do something if true} : {do something if false}`
+
+```js
+
+var isWorking = true;
+
+isWorking ? console.log("Go for it") : console.log("Stand down!!!");
+
+```
+
 
 
