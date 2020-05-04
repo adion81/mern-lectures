@@ -246,9 +246,9 @@ We can do this with a ternary operator . . .
 
 ```js
 
-var isWorking = true;
+var isDarkSide = true;
 
-isWorking ? console.log("Go for it") : console.log("Stand down!!!");
+isDarkSide ? console.log("Now your journey to the dark side is complete") : console.log("You will join us or die!!!");
 
 ```
 
