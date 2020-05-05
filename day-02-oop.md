@@ -95,8 +95,9 @@ What if we wanted to make a Panini... panini's are sandwiches that will always h
 
 ```javascript
 class Panini extends Sandwich {
-  constructor(bread, protein, ...toppings) {
+  constructor(name, bread, protein, ...toppings) {
     super(bread, protein, true, ...toppings);
+    this.name = name;
   }
 }
 
