@@ -25,6 +25,8 @@ const s1 = {
 };
 ```
 
+For every object we create we'll have to rewrite all of this.
+
 ### 2. using `function() {}`
 
 ```javascript
@@ -40,6 +42,8 @@ function Sandwich(bread, protein, isToasted, ...toppings) {
 
 const s2 = new Sanwich("sourdough", "bacon", true, "avacado", "lettuce", "tomato", "basil pesto aioli");
 ```
+
+To make an instance of a `Sandwich` we need to use the `new` keyword. 
 
 ### 2.5 prototype methods (like .5 of a way)
 
@@ -79,7 +83,11 @@ class Sandwich {
     `);
   }
 }
+
+const s2 = new Sanwich("sourdough", "bacon", true, "avacado", "lettuce", "tomato", "basil pesto aioli");
 ```
+
+When we want to make a class in JS, there are few reasons to not use the `class` syntax introduced in **ES6**.
 
 ## Inheritance
 
@@ -91,4 +99,7 @@ class Panini extends Sandwich {
     super(bread, protein, true, ...toppings);
   }
 }
+
+const p1 = new Panini("italian", "prosciuto", "mozarella", "tomato", "basil");
 ```
+
