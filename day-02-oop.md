@@ -100,6 +100,6 @@ class Panini extends Sandwich {
   }
 }
 
-const p1 = new Panini("italian", "prosciuto", "mozarella", "tomato", "basil");
+const p1 = new Panini("italian", "prosciuto", "mozzarella", "tomato", "basil");
 ```
 
