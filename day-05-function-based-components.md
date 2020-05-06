@@ -6,5 +6,5 @@
 
 |   |Class Components | Function Components |
 |-------------------|---------------------|---------------------|
-|  state  | &#9745; | Doesn't have access to state |
-| LifeCyle Methods | &#0252; | Doesn't have access to  |
+|  state  | &#10003; | &#10060; |
+| LifeCyle Methods | &#10003; | &#10060;  |
