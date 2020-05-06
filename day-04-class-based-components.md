@@ -72,13 +72,11 @@ Then in our `App` component (or any other parent component) we can write add in 
 class App extends Component {
   render() {
     return (
-      <div>
-        <CardComponent>
-          <Title text="This is a title" />
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <p>Rerum incidunt sunt minima quae? Ipsam, corporis!</p>
-        </CardComponent>
-      </div>
+      <CardComponent>
+        <Title text="This is a title" />
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Rerum incidunt sunt minima quae? Ipsam, corporis!</p>
+      </CardComponent>
     );
   }
 }
