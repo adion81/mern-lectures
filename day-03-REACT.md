@@ -37,6 +37,10 @@ When we run this command we will get a basic react appliction in the current fol
   ├ package.json
 ```
 
+## JSX
+
+
+
 ## Thinking in React
 
 What does it mean to think in React? With React we are creating something called a Single Page Application. <br>
@@ -51,3 +55,5 @@ What does it mean to think in React? With React we are creating something called
     </ul>
 </details>
 There will be many different ways that we can organize our react applictions.  But we must now start thinking in React, and that means there is only one page.
+
+<img src="https://i.imgflip.com/40bqdp.jpg" alt="SPA" width="400px">
