@@ -58,7 +58,7 @@ If we add in `{ this.props.children }` into our `CardComponent`
 class CardComponent extends Component {
   render() {
     return (
-      <div style={{border: "10px solid rebeccapurple, padding: "20px", width: "440px"}}>
+      <div style={{border: "10px solid rebeccapurple", padding: "20px", width: "440px"}}>
         { this.props.children }
       </div>
     );
