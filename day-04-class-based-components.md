@@ -16,7 +16,7 @@ A Component needs to return elements describing what should be displayed on the 
 
 **Note:** When creating Components be sure to name them starting with a capital letter!
 
-| ❌                                            | ✔️                                             |
+| ❌ doesn't work!                              | ✔️ does work                                   |
 |-----------------------------------------------|-----------------------------------------------|
 | `class exampleComponent extends Component {}` | `class ExampleComponent extends Component {}` |
 
@@ -58,8 +58,7 @@ If we add in `{ this.props.children }` into our `CardComponent`
 class CardComponent extends Component {
   render() {
     return (
-      <div>
-        <Title text="This is a title" />
+      <div style={{border: "10px solid rebeccapurple, padding: "20px", width: "440px"}}>
         { this.props.children }
       </div>
     );
@@ -75,6 +74,7 @@ class App extends Component {
     return (
       <div>
         <CardComponent>
+          <Title text="This is a title" />
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           <p>Rerum incidunt sunt minima quae? Ipsam, corporis!</p>
         </CardComponent>
