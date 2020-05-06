@@ -40,7 +40,7 @@ function Sandwich(bread, protein, isToasted, ...toppings) {
   }
 }
 
-const s2 = new Sanwich("sourdough", "bacon", true, "avacado", "lettuce", "tomato", "basil pesto aioli");
+const s2 = new Sandwich("sourdough", "bacon", true, "avacado", "lettuce", "tomato", "basil pesto aioli");
 ```
 
 To make an instance of a `Sandwich` we need to use the `new` keyword. 
@@ -84,7 +84,7 @@ class Sandwich {
   }
 }
 
-const s2 = new Sanwich("sourdough", "bacon", true, "avacado", "lettuce", "tomato", "basil pesto aioli");
+const s2 = new Sandwich("sourdough", "bacon", true, "avacado", "lettuce", "tomato", "basil pesto aioli");
 ```
 
 When we want to make a class in JS, there are few reasons to not use the `class` syntax introduced in **ES6**.
