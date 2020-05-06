@@ -18,7 +18,7 @@ A Component needs to return elements describing what should be displayed on the 
 
 | ❌                                            | ✔️                                             |
 |-----------------------------------------------|-----------------------------------------------|
-| `class exampleComponent extends Component {}` | `class exampleComponent extends Component {}` |
+| `class exampleComponent extends Component {}` | `class ExampleComponent extends Component {}` |
 
 ## Props
 
