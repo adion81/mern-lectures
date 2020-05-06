@@ -39,6 +39,33 @@ When we run this command we will get a basic react appliction in the current fol
 
 ## JSX
 
+JavaScript XML
+
+JSX is an extension of javascript that allows us to write something that looks like HTML . . .<br>
+But it's not, it's javascript!!!
+
+#### App.js
+```javascript
+class App extends Component{
+    render(){
+        return (
+            // Remember this is not html.
+            <>
+                <h1>Welcome to React</h1>
+                <p>Boy, Will and Adrien sure are the coolest instructors.</p>
+            <>
+        );
+    }
+}
+```
+
+A few things that we need to keep in mind.
+<ul>
+    <li>There is no html except for index.html</li>
+    <li>We must always contain our JSX in a parent element.</li>
+    <li>Use `className` instead of `class`</li>
+    <li>JSX expressions live in the return statement.</li>
+<ul>
 
 
 ## Thinking in React
@@ -56,4 +83,4 @@ What does it mean to think in React? With React we are creating something called
 </details>
 There will be many different ways that we can organize our react applictions.  But we must now start thinking in React, and that means there is only one page.
 
-<img src="https://i.imgflip.com/40bqdp.jpg" alt="SPA" width="400px">
+<img src="https://i.imgflip.com/40bqdp.jpg" alt="SPA" width="600px">
