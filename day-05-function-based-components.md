@@ -4,5 +4,7 @@
 
 ## Class Components vs. Function Components
 
-| Class Components || Function Components |
-|---------------------||---------------------|
+|   |Class Components | Function Components |
+|---------------------|---------------------|
+|  state  | &#9745; | Doesn't have access to state |
+| LifeCyle Methods | &#0252; | Doesn't have access to  |
