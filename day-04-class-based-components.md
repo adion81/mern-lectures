@@ -38,7 +38,8 @@ class CardComponent extends Component {
     return (
       <div>
         <Title text="This is a title" />
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum incidunt sunt minima quae? Ipsam, corporis!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Rerum incidunt sunt minima quae? Ipsam, corporis!</p>
       </div>
     );
   }
