@@ -63,7 +63,7 @@ A few things that we need to keep in mind.
 <ul>
     <li>There is no html except for index.html</li>
     <li>We must always contain our JSX in a parent element.</li>
-    <li>Use `className` instead of `class`</li>
+    <li>Use <b>className</b> instead of <b>class</b></li>
     <li>JSX expressions live in the return statement.</li>
 <ul>
 
