@@ -4,5 +4,5 @@
 
 ## Class Components vs. Function Components
 
-| Class Components | Function Components |
-|---------------------|---------------------|
+| Class Components || Function Components |
+|---------------------||---------------------|
