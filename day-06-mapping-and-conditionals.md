@@ -32,3 +32,35 @@ const BookList = props => {
 
 Here we're going to receive an array of books through props, and using these props we can map throug the array to display the books. If we give React a `<li>War and Peace (Tolstoy)</li>` or `[<li>War and Peace (Tolstoy)</li>]` it will be able to figure out how to display it. But when we give it an array, it will want each child (`<li>`) in the array to have a unique `key` property. We can get the loop index `i` from the `.map()` method and this can serve as a suitablly unique `key`.
 
+## Conditionals in React
+
+We're probably familiar with using `if` in our Views as well
+
+#### SomeView.html
+```html
+{% if user.is_logged_in %}
+  <div class="alert alert-primary">
+    Welcome back, {{ user.username }}!
+  </div>
+{% endif %}
+```
+
+In React we'll be making use of the [ternary opertor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
+
+#### Welcome.jsx
+```js
+const Welcome = (props) => {
+  return (
+    {
+      props.isLoggedIn ?
+      <div className="alert alert-primary">
+        Welcome back, { props.username }!
+      </div> : 
+      <div className="alert alert-danger">
+        Hey there stranger!
+      </div>
+    }
+  );
+}
+```
+
