@@ -153,3 +153,10 @@ const Form = ({fName,lName,handleFirst,handleLast,handleFormSubmit}) => {
 }
 
 ```
+
+## React Dev Tools
+`Use Them!!!`
+<ul>
+    <li>Chrome</li>
+    <li>FireFox</li>
+</ul>
