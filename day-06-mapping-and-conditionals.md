@@ -42,6 +42,10 @@ We're probably familiar with using `if` in our Views as well
   <div class="alert alert-primary">
     Welcome back, {{ user.username }}!
   </div>
+{% else %}
+  <div class="alert alert-danger">
+    Hey there stranger!
+  </div>
 {% endif %}
 ```
 
