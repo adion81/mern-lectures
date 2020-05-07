@@ -48,12 +48,33 @@ React hooks allow us to 'hook' into React's state and lifecycle methods and stil
 useState is a React hook that allows us to hook into the state functionality of React, but first we must import it at the top.
 
 `import React, {useState} from 'react';`
+<br>
+useState has two variables `state` and `setState`, but it also should take in an initial state value.<br>
+`const [count,setCount] = useState(1);`
 
 ```javascript
 import React, {useState} from 'react;
 
 const Form = (props) => {
+    const [form,setForm] = useState({
+        firstName:"",
+        lastName:""
+    });
 
+    // This one function will handle all of our inputs changes.
+    const handleChange = (e) => {
+        // This is where we call the setForm to update our form state.
+        setForm({
+            ...form,
+            [e.target.name] = e.target.value
+        });
+    }
+
+    // This function will be called when we submit the form.
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        // This is where we will eventually send our form data to a server.
+    }
     // Notice that we don't need the render method.
     // That's because we don't have access to it since it's a lifecycle method.
     return (
@@ -61,13 +82,13 @@ const Form = (props) => {
             <input 
                 type="text"
                 name="firstName"
-                value={firstName}
+                value={form.firstName}
                 onChange={ (e) => handleChange(e) }
             />
             <input 
                 type="text"
                 name="lastName"
-                value={lastName}
+                value={form.lastName}
                 onChange={ (e) => handleChange(e) }
             />
             <input 
