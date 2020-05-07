@@ -56,19 +56,8 @@ useState has two variables `state` and `setState`, but it also should take in an
 import React, {useState} from 'react;
 
 const Form = (props) => {
-    const [form,setForm] = useState({
-        firstName:"",
-        lastName:""
-    });
-
-    // This one function will handle all of our inputs changes.
-    const handleChange = (e) => {
-        // This is where we call the setForm to update our form state.
-        setForm({
-            ...form,
-            [e.target.name] = e.target.value
-        });
-    }
+    const [firstName,setFirstName] = useState("");
+    const [lastName,setLastName] = useState("");
 
     // This function will be called when we submit the form.
     const handleSubmit = (e) => {
@@ -83,13 +72,13 @@ const Form = (props) => {
                 type="text"
                 name="firstName"
                 value={form.firstName}
-                onChange={ (e) => handleChange(e) }
+                onChange={ (e) => setFirstName(e.target.value) }
             />
             <input 
                 type="text"
                 name="lastName"
                 value={form.lastName}
-                onChange={ (e) => handleChange(e) }
+                onChange={ (e) => setLastName(e.target.value) }
             />
             <input 
                 type="submit"
@@ -102,4 +91,65 @@ const Form = (props) => {
 }
 
 export default Form;
+```
+
+## Lifting State
+
+<img src="https://i.imgflip.com/40hcej.jpg" alt="Lifting State" width="400px" />
+
+Sometimes we need sibling components to share information, but if one sibling say a `Form.js` is managing it's state, the other 'DisplayInfo.js' cannot access it.<br>
+<br>
+In this case we would need to lift up our state to the common parent component.
+
+```javascript
+function App(){
+    const [firstName,setFirstName] = useState("");
+    const [lastName,setLastName] = useState("");
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        // This is where we will eventually send our form data to a server.
+    }
+    
+    return(
+        <div>
+            <Form 
+                fName={firstName}
+                lName={lastName}
+                handleFirst={setFirstName}
+                handleLast={handleLastName}
+                handleFormSubmit={handleSubmit}
+            />
+            <Display 
+                fName={firstName} 
+                lName={lastName} 
+            />
+        </div>
+    );
+}
+
+
+const Form = ({fName,lName,handleFirst,handleLast,handleFormSubmit}) => {
+    return(
+        <form onSubmit={(e) => handleFormSubmit(e)} >
+            <input 
+                type="text"
+                name="firstName"
+                value={fName}
+                onChange={ (e) => handleFirst(e.target.value) }
+            />
+            <input 
+                type="text"
+                name="lastName"
+                value={lName}
+                onChange={ (e) => handleLast(e.target.value) }
+            />
+            <input 
+                type="submit"
+                value="Submit"
+            />
+        </form>
+    );
+}
+
 ```
