@@ -128,7 +128,7 @@ function App(){
     );
 }
 
-
+// We can deconstruct our props in the parameters like so.
 const Form = ({fName,lName,handleFirst,handleLast,handleFormSubmit}) => {
     return(
         <form onSubmit={(e) => handleFormSubmit(e)} >
