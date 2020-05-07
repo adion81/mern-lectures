@@ -97,7 +97,7 @@ export default Form;
 
 <img src="https://i.imgflip.com/40hcej.jpg" alt="Lifting State" width="400px" />
 
-Sometimes we need sibling components to share information, but if one sibling say a `Form.js` is managing it's state, the other 'DisplayInfo.js' cannot access it.<br>
+Sometimes we need sibling components to share information, but if one sibling say a `Form.js` is managing it's state, the other `DisplayInfo.js` cannot access it.<br>
 <br>
 In this case we would need to lift up our state to the common parent component.
 
