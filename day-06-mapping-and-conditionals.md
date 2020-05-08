@@ -265,7 +265,7 @@ function App(props) {
   return (
     <div>
       <h1>Books</h1>
-      <Form addBook={ newBook => setBooks( [...books, newBook ] ); } />
+      <Form addBook={ newBook => setBooks( [...books, newBook ] ) } />
       <Table books={ books } />
     </div>
   )
