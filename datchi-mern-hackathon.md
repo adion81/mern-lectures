@@ -35,7 +35,7 @@ Dojodatchi Hack-a-thon
 
 ```
 
-<img src="https://github.com/adion81/mern-lectures/blob/master/assets/MERNDOJODATCHI.png" alt="DojoDatchi" width="600px" />
+<img src="https://github.com/adion81/mern-lectures/blob/master/assets/MERNDOJODATCHI.png" alt="DojoDatchi" width="900px" />
 
 ## Features
 <ol>
