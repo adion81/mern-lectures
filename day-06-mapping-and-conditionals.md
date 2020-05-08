@@ -133,7 +133,7 @@ The form's inputs can be updated like so
     name="title" 
     value={ title } 
     onChange={ (e) => setTitle(e.target.value) }
-   />
+  />
 </div>
 <div>
   <label>Author</label>
@@ -206,7 +206,7 @@ const Table = (props) => {
         )}
       </tbody>
     </table>
-  )
+  );
 }
 ```
 
@@ -268,6 +268,6 @@ function App(props) {
       <Form addBook={ newBook => setBooks( [...books, newBook ] ) } />
       <Table books={ books } />
     </div>
-  )
+  );
 }
 ```
