@@ -55,3 +55,11 @@ Dojodatchi Hack-a-thon
     <li>Display different images based on what happens to the datchi.</li>
     <li>Break your UI into reusable components</li>
 </ol>
+
+
+## CSS Suggestions
+
+<ul>
+    <li><a href="https://nostalgic-css.github.io/NES.css/">NES CSS</a></li>
+    <li>Or implement a theme.</li>
+</ul>
