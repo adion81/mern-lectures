@@ -81,4 +81,34 @@ But what if we wanted to call the API when the page is first loaded?
 
 ## Use Effect Hook
 
+useEffect is a React hook that can manage side effects in our functional components.<br>
+It gets called everytime the component is rendered, and we can use it to call an api when the page first gets loaded.<br>
+<br>
+The first argument in the `useEffect` hook is an anonymous function, and we write what we want to happen inside of it.<br>
+The second argument in the `useEffect` hook is an array that contains variables.<br>
+This is an extremely important argument, because you don't want to end up calling your api 5 million times.<br>
 
+```javascript
+import React,{useState,useEffect} from 'react';
+import axios from 'axios';
+
+function App(){
+    const [joke,setJoke] = useState({});
+
+    useEffect(() => {
+        axios.get('https://official-joke-api.appspot.com/random_joke')
+            .then(res => setJoke(res.data))
+    },[]);
+
+
+    return (
+        <div>
+            <h4>{joke.setup}</h4>
+            <p>{joke.punchline}</p>
+        </div>
+    );
+}
+export default App;
+```
+
+<h2>If the second argument array is empty, then the useEffect hook will only execute once when the component first renders.<h2>
