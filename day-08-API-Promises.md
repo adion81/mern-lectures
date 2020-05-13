@@ -1,5 +1,4 @@
-# Day 6 - Mapping and Conditionals
-
+# Day 8 - APIs and Promises
 <img src="https://raw.githubusercontent.com/adion81/mern-lectures/master/assets/React-icon.svg" width="256px" alt="React" />
 
 ## Promises - A better way for async behavior.
