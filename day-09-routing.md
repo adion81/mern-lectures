@@ -18,8 +18,6 @@
 
 <hr>
 
-<br><br><br><br><br><br><br>
-
 ## How to use @Reach/Router
 
 #### Step 0 - Be sure to install it with each project
@@ -93,7 +91,7 @@ function App() {
 }
 ```
 
-In this example we can get the `:location` part of the `path` as a `prop` inside of the `Dojo` component.
+In this example we can get the `:city` part of the `path` as a `prop` inside of the `Dojo` component.
 
 We just need to be sure to use the `:` at the start of the path we want to be a variable.
 
