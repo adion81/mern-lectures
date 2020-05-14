@@ -49,7 +49,7 @@ Assuming we have components named `<IndexView />`, `<HomeView />`, and `<UserVie
 
 #### Step 3 - Use `<Link>` components like you would `<a>` anchor tags
 
-```
+```js
 // this can also go inside of App.js for now
 <ul className="navbar">
   <li>
@@ -66,7 +66,7 @@ Assuming we have components named `<IndexView />`, `<HomeView />`, and `<UserVie
 
 We can now click on the above links to change which component is being show to our user.
 
-<img src="https://raw.githubusercontent.com/adion81/mern-lectures/master/assets/routing-nutshell.png" alt="front-end routing" />
+<img src="https://raw.githubusercontent.com/adion81/mern-lectures/master/assets/routing-nutshell.png" alt="front-end routing" width="926px" />
 
 <hr>
 
