@@ -16,6 +16,10 @@
   <p>Yes. While it will appear to the user that they are navigating to different pages, in fact they will be viewing the same <code>index.html</code> all along. We can change what is displayed for our user pased on what <code>url</code> the user is viewing.</p>
 </details>
 
+<hr>
+
+<br><br><br><br><br><br><br>
+
 ## How to use @Reach/Router
 
 #### Step 0 - Be sure to install it with each project
@@ -62,11 +66,37 @@ Assuming we have components named `<IndexView />`, `<HomeView />`, and `<UserVie
 
 We can now click on the above links to change which component is being show to our user.
 
-{{ Diagram here }}
+<img src="https://raw.githubusercontent.com/adion81/mern-lectures/master/assets/routing-nutshell.png" alt="front-end routing" />
 
+<hr>
 
 ## Route Parameters
 
+We can also use Route parameters...
 
+```js
+// inside of App.js
+const Dojo = (props) => {
+  return <h1>Welcome to {props.location}!</h1>
+}
+
+function App() {
+  <Link to="/dojo/Chicago">Chicago</Link>
+  &nbsp;|&nbsp;
+  <Link to="/dojo/Tulsa">Tulsa</Link>
+  &nbsp;|&nbsp;
+  <Link to="/dojo/DC">DC</Link>
+  
+  <Router>
+    <Dojo path="/dojo/:location" />
+  </Router>
+}
+```
+
+In this example we can get the `:location` part of the `path` as a `prop` inside of the `Dojo` component.
+
+We just need to be sure to use the `:` at the start of the path we want to be a variable.
+
+<hr>
 
 ## The `navigate` function
