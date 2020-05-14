@@ -100,3 +100,27 @@ We just need to be sure to use the `:` at the start of the path we want to be a 
 <hr>
 
 ## The `navigate` function
+
+Let's say we just submitted a form and we want to send the user to a different view
+
+```js
+import { navigate } from "@reach/router";
+
+const SomeForm = (props) => {
+
+  const submitHandler = (e) => {
+    e.preventDefault();
+    if(form_is_valid) {
+      // do something with the data
+      navigate("/success"); // success could be any route... you don't have to call it success in fact please don't
+    } else {
+      // display error messages to the user
+    }
+  }
+
+  {/* rest of component omitted */}
+
+}
+```
+
+we can use the navigate function to send the user to where we want them to go much like we would use `redirect` in the past.
