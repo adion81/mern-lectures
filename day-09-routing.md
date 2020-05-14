@@ -77,7 +77,7 @@ We can also use Route parameters...
 ```js
 // inside of App.js
 const Dojo = (props) => {
-  return <h1>Welcome to {props.location}!</h1>
+  return <h1>Welcome to {props.city}!</h1>
 }
 
 function App() {
@@ -88,7 +88,7 @@ function App() {
   <Link to="/dojo/DC">DC</Link>
   
   <Router>
-    <Dojo path="/dojo/:location" />
+    <Dojo path="/dojo/:city" />
   </Router>
 }
 ```
