@@ -102,21 +102,21 @@ module.exports = User;
 
 ```javascript
     Joke.find()
-        .then( allJokes => res.json({jokes: allJokes}))
+        .then( allJokes => res.json(allJokes))
         .catch(err => res.json(err))
 ```
 
 #### To find one(SHOW). . . 
 ```javascript
-    Joke.find({_id:<SomeIDFromSomewhere>)
-        .then( oneJoke => res.json({joke: oneJoke}))
+    Joke.find({_id:req.params.id)
+        .then( oneJoke => res.json(oneJoke))
         .catch(err => res.json(err))
 ```
 
 #### Creating one(CREATE). . . 
 ```javascript
     Joke.create(req.body)
-        .then( newJoke => res.json({joke: newJoke}))
+        .then( newJoke => res.json(newJoke))
         .catch(err => res.json(err))
 ```
 
