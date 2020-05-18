@@ -58,7 +58,8 @@ In order to use . . .<br>
 We must install it.
 
 `npm install mongoose`<br>
-We must also require it.
+<br>
+We must also require it.<br>
 `const mongoose = require('mongoose')`
 
 ### Database Connection
@@ -93,10 +94,26 @@ module.exports = User;
 
 ### Mongoose Queries
 
-#### To find one . . .
+#### To find All(INDEX) . . .
 
 ```javascript
+    Joke.find()
+        .then( allJokes => res.json({jokes: allJokes}))
+        .catch(err => res.json(err))
+```
 
+#### To find one(SHOW). . . 
+```javascript
+    Joke.find({_id:<SomeIDFromSomewhere>)
+        .then( oneJoke => res.json({joke: oneJoke}))
+        .catch(err => res.json(err))
+```
+
+#### Creating one(CREATE). . . 
+```javascript
+    Joke.create(req.body)
+        .then( newJoke => res.json({joke: newJoke}))
+        .catch(err => res.json(err))
 ```
 
 
