@@ -53,4 +53,53 @@ Running Mongo commands in the shell might sound like a fun time, but we want to 
 
 Mongoose will allow us to query our Mongo database to retrieve, create, update,and delete information.
 
+In order to use . . .<br>
+<br>
+We must install it.
+
+`npm install mongoose`<br>
+We must also require it.
+`const mongoose = require('mongoose')`
+
+### Database Connection
+```javascript
+
+mongoose.connect("mongodb://localhost/{databaseName},{
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+})
+    .then(() =>  console.log("You're now inside the mainframe..."))
+    .catch(err => console.log("MELTDOWN! MELTDOWN! MELTDOWN!",err))
+
+```
+
+### The Model Setup
+
+```javascript
+const mongoose = require("mongoose");
+
+// Basic setup of the Mongoose Schema
+const JokeSchema = new mongoose.Schema({
+    setup: String,
+    punchline: String
+},{timestamps:true})
+
+// This is how we register our schema.
+const Joke = mongoose.model("Joke",JokeSchema);
+
+// Finally we export it out of the file.
+module.exports = User;
+```
+
+### Mongoose Queries
+
+#### To find one . . .
+
+```javascript
+
+```
+
+
+
+
 
