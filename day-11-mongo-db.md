@@ -165,3 +165,21 @@ Finally we want our Express server to not look like the mountains of Mordor.
 <img src="https://i.pinimg.com/originals/44/12/d6/4412d6e2a2328c631e71d68e14da600c.jpg" alt="Mordor" width="300px">
 Meaning that everything is in one file, but more like the rolling hills of the Shire.
 <img src="https://i.pinimg.com/originals/3a/73/5f/3a735fcfb6f4bd6c37b9f10477a449f3.jpg" alt="Shire" width="300px">
+
+#### The Folder Structure
+
+```
+├ jokes-api/
+    ├ node_modules/
+    ├ server/
+        ├ config
+            ├ database.config.js
+        ├ controllers
+            ├ jokes.controllers.js
+        ├ models
+            ├ joke.model.js
+        ├ routes
+            ├ jokes.routes.js
+    ├ server.js
+    ├ package.json
+```
