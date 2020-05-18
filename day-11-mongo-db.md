@@ -81,7 +81,11 @@ const mongoose = require("mongoose");
 
 // Basic setup of the Mongoose Schema
 const JokeSchema = new mongoose.Schema({
-    setup: String,
+    setup: {
+        type: String,
+        required:[true,"This is how we validate"],
+        minlength: [3,"Setup has to be more than 2 characters"]
+    },
     punchline: String
 },{timestamps:true})
 
@@ -116,7 +120,48 @@ module.exports = User;
         .catch(err => res.json(err))
 ```
 
+We know by now that we can't relate our database objects together, but what if we want to have a one to many relationship?<br>
 
+### Nested Documents
 
+```javascript
+const mongoose = require("mongoose")
 
+const MessageSchema = new mongoose.Schema({
+    message:{
+        type:String,
+        minlength:[3,"Message must be at least 3 characters."]
+    }
+},{timestamps:true})
 
+const UserSchema = new mongoose.Schema({
+    name:{
+        type: String,
+        required:[true,"A user must have a name"]
+    },
+    messages:[MessageSchema]
+},{timestamps:true})
+
+const Message = mongoose.model("Message",MessageSchema);
+const User = mongoose.model("User",UserSchema);
+
+```
+
+To actually create a message and nest it in the UserSchema, we need to do something like this.
+
+```javascript
+
+Message.create(req.body)
+    .then(newMessage => {
+        User.findByIdAndUpdate({_id:req.params.id},{$push:{messages:newMessage}})
+    })
+    .catch(err => res.json(err))
+
+```
+
+## Modularization
+Finally we want our Express server to not look like the mountains of Mordor.
+
+<img src="https://i.pinimg.com/originals/44/12/d6/4412d6e2a2328c631e71d68e14da600c.jpg" alt="Mordor" width="300px">
+Meaning that everything is in one file, but more like the rolling hills of the Shire.
+<img src="https://i.pinimg.com/originals/3a/73/5f/3a735fcfb6f4bd6c37b9f10477a449f3.jpg" alt="Shire" width="300px">
