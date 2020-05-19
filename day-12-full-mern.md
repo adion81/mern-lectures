@@ -4,13 +4,19 @@
 
 ## How does it all fit together?
 
+<br>
+
 | Front-End Technologies | Back-End Technologies |
 |------------------------|-----------------------|
 | React                  | Express               |
 | @Reach/Router          | MongoDB / Mongoose    |
 | Axios                  | cors                  |
 
+<br>
+
 <img src="https://raw.githubusercontent.com/adion81/mern-lectures/master/assets/MERN-req-res.png" alt="diagram" />
+
+<br>
 
 ## Final Folder Structure
 
