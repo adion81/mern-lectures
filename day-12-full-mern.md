@@ -49,27 +49,27 @@ There are many ways we can organize our projects, but for now it's best to creat
 
 ## Full MERN Project Checklist
 
-* create the initial folder and `cd` inside of it
+**☑ create the initial folder and `cd` inside of it**
 
 ``` 
 mkdir disco-dogs
 cd disco-dogs
 ```
 
-* create server.js and initialize our project
+**☑ create server.js and initialize our project**
 
 ```
 touch server.js
 npm init -y
 ```
 
-* install our back-end dependancies 
+**☑ install our back-end dependancies**
 
 ```
 npm i cors express mongoose
 ```
 
-* create our back-end folder structure
+**☑ create our back-end folder structure**
 
 ```
 mkdir server
@@ -78,13 +78,13 @@ mkdir config controllers models routes
 cd ..
 ```
 
-* create our front-end (make sure we're in the same folder as ```server/```
+**☑ create our front-end (make sure we're in the same folder as ```server/```**
 
 ```
 npx create-react-app client
 ```
 
-* install our front-end dependancies
+**☑ install our front-end dependancies**
 
 ```
 cd client
@@ -92,4 +92,4 @@ npm i axios @reach/router
 cd ..
 ```
 
-#### Now we're ready to get coding!
+**☑ Now we're ready to get coding!**
