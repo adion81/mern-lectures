@@ -78,6 +78,14 @@ mkdir config controllers models routes
 cd ..
 ```
 
+**☑ initialize git repo**
+
+```
+git init
+touch .gitignore
+
+```
+
 **☑ create our front-end (make sure we're in the same folder as ```server/```**
 
 ```
