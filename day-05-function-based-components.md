@@ -71,13 +71,13 @@ const Form = (props) => {
             <input 
                 type="text"
                 name="firstName"
-                value={form.firstName}
+                value={firstName}
                 onChange={ (e) => setFirstName(e.target.value) }
             />
             <input 
                 type="text"
                 name="lastName"
-                value={form.lastName}
+                value={lastName}
                 onChange={ (e) => setLastName(e.target.value) }
             />
             <input 
@@ -129,7 +129,8 @@ function App(){
 }
 
 // We can deconstruct our props in the parameters like so.
-const Form = ({fName,lName,handleFirst,handleLast,handleFormSubmit}) => {
+const Form = (props) => {
+    const {fName,lName,handleFirst,handleLast,handleFormSubmit} = props;
     return(
         <form onSubmit={(e) => handleFormSubmit(e)} >
             <input 
