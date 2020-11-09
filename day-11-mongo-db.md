@@ -34,10 +34,10 @@ use {database name}
 db.dropDatabase()
 
 // This will show all collections in the current database
-db.showCollections()
+show collections
 
 // This will create a collection in the current database
-db.createCollection("databaseName")
+db.createCollection("collectionName")
 
 // This will drop a collection in the current database
 db.{collectionName}.drop()
