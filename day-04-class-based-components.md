@@ -83,3 +83,31 @@ class App extends Component {
 ```
 
 This is really useful when we want to make components that are responsible for layout or navigation and may later on help us avoid having to "lift state" which will be a topic for another day.
+
+<br>
+
+### What are Lifecyle Methods?
+
+There are 3 different stages in the life of a React component.
+<details>
+    <summary>Mounting</summary>
+    <ol>
+        <li>constructor()</li>
+        <li>render()</li>
+        <li>componenetDidMount()</li>
+    </ol>
+</details>
+<details>
+    <summary>Updating</summary>
+    <ol>
+        <li>shouldComponentUpdate()</li>
+        <li>render()</li>
+        <li>componenetDidUpdate()</li>
+    </ol>
+</details>
+<details>
+    <summary>UnMounting</summary>
+    <ol>
+        <li>componentWillUnmount()</li>
+    </ol>
+</details>
