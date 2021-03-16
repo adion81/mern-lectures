@@ -39,7 +39,29 @@ RESTful APIs is a set of rules to shape what the API looks like.<br>
 <br>
 REST - `Representational State Transfer`<br>
 <br>
+<details>
+    <summary>Best Practices for RESTful APIs</summary>
+    <ol>
+        <li>Communicate with JSON</li>
+        <li>Use nouns in endpoint naming conventions</li>
+        <li>Let Http verbs define the actions of the routes.</li>
+        <li>Name your collections in the plural form</li>
+        <li>Return standard error codes</li>
+    </ol>
+</details>
 <h6>The most important rule of RESTful APIs is that you should get a piece of data called a resource from a specific url.</h6>
+
+
+<details>
+    <summary>Common Http Verbs</summary>
+    <ol>
+        <li>GET</li>
+        <li>POST</li>
+        <li>PUT</li>
+        <li>PATCH</li>
+        <li>DELETE</li>
+    </ol>
+</details>
 
 ### Consuming APIs
 A great way to consume an API is using the fetch method within JS.<br>
